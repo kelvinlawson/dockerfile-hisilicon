@@ -1,7 +1,7 @@
 FROM ubuntu:12.04
 
 # Install pre-requisites
-RUN apt-get update && apt-get install -y bzip2 build-essential libc6-dev-i386 ia32-libs lib32z1-dev libncurses5 libncurses5-dev u-boot-tools vim
+RUN apt-get update && apt-get install -y bzip2 build-essential libc6-dev-i386 ia32-libs lib32z1-dev libncurses5 libncurses5-dev u-boot-tools vim squashfs-tools gettext git
 
 # Add local files to the container
 COPY toolchains /tmp/toolchains
